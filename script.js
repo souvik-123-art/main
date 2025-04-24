@@ -149,7 +149,9 @@ let tl = gsap.timeline();
 //     duration: 0.8,
 //   });
 // }
-tl.from(
+
+if (window.innerWidth > 768) {
+  tl.from(
   "header #logo",
   {
     y: -30,
@@ -159,8 +161,6 @@ tl.from(
   },
   "start"
 );
-
-if (window.innerWidth > 768) {
   tl.from(
     "header #navbar ul li",
     {
@@ -192,6 +192,16 @@ if (window.innerWidth > 768) {
     "start+=0.4"
   );
 } else {
+  tl.from(
+  "header #logo",
+  {
+    x: -30,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.3,
+  },
+  "start"
+);
   tl.from(
     "main section #hero-section #hero-img",
     {
