@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- all wrapper  -->
+    <div id="containers" class="bg-coffee-dark">
+      <!-- header starts  -->
+      <header
+        class="z-20 h-auto sticky top-0 left-0 w-full flex items-center justify-between sm:px-12 sm:py-6 px-5 py-3 bg-coffee-dark"
+      >
+        <div class="w-auto h-8 sm:h-9 overflow-hidden" id="logo">
+          <a href="#hero-section"
+            ><img
+              class="w-full h-full object-cover"
+              src="images/logo.png"
+              alt=""
+          /></a>
+        </div>
+        <nav class="flex items-center">
+          <!-- <div id="navbar" class="hidden md:block"> -->
+          <div
+            id="navbar"
+            class="fixed md:relative top-0 right-0 translate-x-full md:translate-x-0 sm:w-3/5 w-4/5 md:w-auto h-full md:h-auto bg-[#f3e8e2] md:bg-[#4b2e2b] py-12 md:py-0 transition-all duration-300"
+          >
+            <ul
+              class="flex flex-col md:flex-row items-center gap-10 md:gap-8 md:text-[#f3e8e2] text-[#a6004b]"
+              id="nav-item"
+            >
+              <li id="cross" class="md:hidden duration-100 self-end px-12">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#">Home</a>
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#about-sec">About</a>
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#menu-sec">Menu</a>
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#testimonials-sec"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#gallery-sec">Gallery</a>
+              </li>
+              <li class="nav-list">
+                <a class="hover:text-[#f7d897]" href="#contact-sec">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div id="nav-menu-btn" class="md:hidden">
+            <i
+              class="fa-solid fa-bars text-2xl text-[#f3e8e2] active:text-[#ffae00]"
+            ></i>
+          </div>
+        </nav>
+      </header>
+      <!-- header ends  -->
+      <!-- main contents starts -->
+      <main>
+        <!-- hero section  -->
+        <section>
+          <div
+            id="hero-section"
+            class="flex flex-col md:flex-row-reverse justify-around items-center gap-4 bg-coffee-dark w-full h-auto px-5 sm:px-12 py-15 sm:py-24"
+          >
+            <div id="hero-img" class="h-100 sm:h-150 w-auto overflow-hidden">
+              <img
+                class="h-full w-full object-contain"
+                src="images/coffee-hero-section.png"
+                alt=""
+              />
+            </div>
+            <div id="hero-cont">
+              <div id="hero-text" class="text-center md:text-left mb-12">
+                <h1
+                  class="text-5xl sm:text-6xl text-coffee-gold font-bold font-pacifico mb-6"
+                >
+                  Best Coffee
+                </h1>
+                <p class="sm:text-4xl text-3xl text-coffee-light mb-4">
+                  Make your day great with our special coffee!
+                </p>
+                <p class="text-coffee-accent text-md text-center md:text-left">
+                  Welcome to our coffee paradise, everybody tells a story &
+                  every cup sparks joy.
+                </p>
+              </div>
+              <div
+                id="hero-btn"
+                class="flex items-center gap-3 justify-center md:justify-start"
+              >
+                <button
+                  id="order-btn"
+                  class="bg-coffee-gold px-5 py-3 rounded-full text-coffee-dark border-1 border-[#ffae00] hover:scale-105 transition-all duration-200"
+                >
+                  Order Now
+                </button>
+                <a href="#contact-sec"
+                  ><button
+                    id="Contact-btn"
+                    class="px-5 py-3 rounded-full bg-[#4b2e2b] border-1 border-[#ffae00] text-[#ffae00] hover:bg-[#f3e8e2] hover:border-[#f3e8e2] hover:text-[#7b5e57] transition-all duration-200"
+                  >
+                    Contact Us
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about section  -->
+        <section>
+          <div
+            id="about-sec"
+            class="bg-coffee-cream w-full h-auto px-5 sm:px-12 py-12 sm:py-24 flex flex-col items-center"
+          >
+            <div id="heading" class="mb-18 flex flex-col items-center">
+              <h1 class="text-3xl sm:text-5xl text-coffee-dark font-bold mb-2">
+                About Us
+              </h1>
+              <div
+                id="underline"
+                class="h-1 w-1/2 rounded-full bg-coffee-gold"
+              ></div>
+            </div>
+            <div
+              id="about-cont"
+              class="flex md:flex-row flex-col items-center justify-around gap-4"
+            >
+              <div
+                id="about-img"
+                class="md:w-100 md:h-100 sm:w-90 sm:h-90 w-70 h-70 overflow-hidden rounded-full mb-12"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  src="images/about-image.jpg"
+                  alt=""
+                />
+              </div>
+              <div id="about-text" class="md:w-1/2 w-full">
+                <div
+                  id="about-para"
+                  class="md:text-2xl text-xl text-coffee-accent text-center mb-8"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Placeat iste rerum nisi dolorum deleniti nostrum, iure
+                    deserunt dicta eveniet asperiores officia laborum impedit
+                    expedita ipsam molestias exercitationem ad quisquam
+                    repudiandae!
+                  </p>
+                </div>
+
+                <div
+                  id="social"
+                  class="text-3xl flex items-center justify-center gap-4"
+                >
+                  <div id="fb">
+                    <a
+                      href="https://www.facebook.com/NescafeIndia/"
+                      target="_blank"
+                      ><i
+                        class="fa-brands fa-facebook text-[#4b2e2b] hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                      ></i
+                    ></a>
+                  </div>
+                  <div id="x">
+                    <a
+                      href="https://x.com/i/flow/login?redirect_after_login=%2Fnescafeindia"
+                      target="_blank"
+                      ><i
+                        class="fa-brands fa-x-twitter text-[#4b2e2b] hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                      ></i
+                    ></a>
+                  </div>
+                  <div id="insta">
+                    <a
+                      href="https://www.instagram.com/NescafeIndia/"
+                      target="_blank"
+                      ><i
+                        class="fa-brands fa-instagram text-[#4b2e2b] hover:text-[#fdc958] active:text-[#ffae00] hover:translate-y-[-10%] transition-all duration-300"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- menu section  -->
+        <section>
+          <div id="menu-sec" class="px-5 sm:px-12 py-15 sm:py-24">
+            <div id="heading" class="mb-24 flex flex-col items-center">
+              <h1 class="text-3xl sm:text-5xl text-coffee-light font-bold mb-2">
+                Our Menu
+              </h1>
+              <div
+                id="underline"
+                class="h-1 w-30 rounded-full bg-coffee-gold"
+              ></div>
+            </div>
+            <div
+              id="menu-grid"
+              class="grid lg:grid-rows-2 lg:grid-cols-3 sm:grid-rows-3 sm:grid-cols-2 grid-rows-1 grid-cols-1 gap-12"
+            >
+              <div
+                id="menu1"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/hot-beverages.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Hot Beverges
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    wide range of steaming hot coffee to make you fresh and
+                    light
+                  </p>
+                </div>
+              </div>
+              <div
+                id="menu2"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/cold-beverages.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Cold Beverges
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    creamy and frothy cold coffee to make you cool
+                  </p>
+                </div>
+              </div>
+              <div
+                id="menu3"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/refreshment.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Refreshment
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    Fruit and icy refreshing drink to make feel refresh
+                  </p>
+                </div>
+              </div>
+              <div
+                id="menu4"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/special-combo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Special Combos
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    Your favorite eating and drinking combinations
+                  </p>
+                </div>
+              </div>
+              <div
+                id="menu5"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/desserts.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Dessert
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    Satitate your palate and take you on a culinary treat
+                  </p>
+                </div>
+              </div>
+              <div
+                id="menu6"
+                class="col-span-1 row-span-1 flex flex-col items-center"
+              >
+                <div class="menu-img w-auto h-45 overflow-hidden mb-6 hover:scale-105 cursor-pointer transition-all duration-300">
+                  <img
+                    class="h-full w-full object-contain"
+                    src="images/burger-frenchfries.png"
+                    alt=""
+                  />
+                </div>
+                <div class="menu-txt text-center w-2/3">
+                  <h1 class="text-2xl font-bold text-coffee-cream mb-2">
+                    Burger & French Fries
+                  </h1>
+                  <p class="text-xl text-coffee-accent">
+                    Quick bites to satisfy your small size hunger
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- testimonials section  -->
+        <section>
+          <div
+            id="testimonials-sec"
+            class="w-full h-auto px-5 sm:px-12 py-15 sm:py-24 bg-coffee-cream"
+          >
+            <div id="heading" class="mb-24 flex flex-col items-center">
+              <h1 class="text-3xl sm:text-5xl text-coffee-dark font-bold mb-2">
+                Testimonials
+              </h1>
+              <div
+                id="underline"
+                class="h-1 w-40 rounded-full bg-coffee-gold"
+              ></div>
+            </div>
+            <div id="test-slide" class="swiper">
+              <div class="slider-wrapper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <div class="img h-50 w-50 overflow-hidden rounded-full">
+                      <img
+                        class="h-full w-full object-cover"
+                        src="images/user-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text text-center w-2/3">
+                      <h1 class="mb-2 font-bold text-2xl text-coffee-gold">
+                        Sarah Johnson
+                      </h1>
+                      <i class="text-coffee-accent"
+                        >"Loved the French roast.Perfectly balanced and
+                        rich.Will order again!"</i
+                      >
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img h-50 w-50 overflow-hidden rounded-full">
+                      <img
+                        class="h-full w-full object-cover"
+                        src="images/user-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text text-center w-2/3">
+                      <h1 class="mb-2 font-bold text-2xl text-coffee-gold">
+                        David Miller
+                      </h1>
+                      <i class="text-coffee-accent"
+                        >"The espresso here is a game changer! Rich, bold, and
+                        exactly what I need to kickstart my day."
+                      </i>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img h-50 w-50 overflow-hidden rounded-full">
+                      <img
+                        class="h-full w-full object-cover"
+                        src="images/user-3.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text text-center w-2/3">
+                      <h1 class="mb-2 font-bold text-2xl text-coffee-gold">
+                        Ethan Carter
+                      </h1>
+                      <i class="text-coffee-accent"
+                        >" the aroma and taste here are unmatched. Cozy vibes
+                        and friendly staff too!"</i
+                      >
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img h-50 w-50 overflow-hidden rounded-full">
+                      <img
+                        class="h-full w-full object-cover"
+                        src="images/user-4.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text text-center w-2/3">
+                      <h1 class="mb-2 font-bold text-2xl text-coffee-gold">
+                        Emily Brooks
+                      </h1>
+                      <i class="text-coffee-accent"
+                        >"Absolutely in love with this café! From the creamy
+                        cappuccino to the aesthetic interiors—everything feels
+                        crafted with care."</i
+                      >
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <div class="img h-50 w-50 overflow-hidden rounded-full">
+                      <img
+                        class="h-full w-full object-cover"
+                        src="images/user-5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="text text-center w-2/3">
+                      <h1 class="mb-2 font-bold text-2xl text-coffee-gold">
+                        Lucas Bennett
+                      </h1>
+                      <i class="text-coffee-accent"
+                        >"A hidden gem! Their cold brew is smooth and
+                        refreshing"</i
+                      >
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- gallery section  -->
+        <section>
+          <div
+            id="gallery-sec"
+            class="w-full h-auto px-2 sm:px-12 py-15 sm:py-24 bg-[#222]"
+          >
+            <div id="heading" class="mb-12 flex flex-col items-center w-auto">
+              <h1 class="text-3xl sm:text-5xl text-coffee-gold font-bold mb-2">
+                Our Gallery
+              </h1>
+              <div
+                id="underline"
+                class="h-1 w-30 rounded-full bg-coffee-cream"
+              ></div>
+            </div>
+            <div
+              id="gallery-grid"
+              class="grid lg:grid-rows-2 lg:grid-cols-3 sm:grid-rows-3 sm:grid-cols-2 grid-rows-1 grid-cols-1 w-full h-auto px-5 sm:px-12 py-15 sm:py-24 gap-8"
+            >
+              <div
+                class="gallery1-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery2-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery3-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery4-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-4.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery5-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-5.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="gallery6-img w-auto h-80 rounded-xl cursor-pointer overflow-hidden col-span-1 row-span-1"
+              >
+                <img
+                  class="h-full w-full object-cover hover:scale-105 transition-all duration-500"
+                  src="images/gallery-6.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact us section  -->
+        <section>
+          <div
+            id="contact-sec"
+            class="w-full h-auto px-5 sm:px-12 py-15 sm:py-24 bg-[#fff5f7] flex flex-col items-center"
+          >
+            <div
+              id="heading"
+              class="mb-12 flex flex-col items-center w-auto mb-24"
+            >
+              <h1 class="text-3xl sm:text-5xl text-coffee-dark font-bold mb-2">
+                Contact Us
+              </h1>
+              <div
+                id="underline"
+                class="h-1 w-30 rounded-full bg-coffee-gold"
+              ></div>
+            </div>
+            <div
+              class="contact-cont w-full flex flex-col-reverse sm:flex-row justify-between gap-12 sm:gap-4"
+            >
+              <div
+                id="location-sec"
+                class="w-full sm:w-1/2 h-auto flex flex-col gap-8"
+              >
+                <div
+                  class="comp-address flex items-center gap-2 text-[#a6004b]"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <p>123 Campsite Avenue, Jaipur, India 98760</p>
+                </div>
+                <div class="comp-email flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@nescafeofficial.com</p>
+                </div>
+                <div class="comp-mobile flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(123) 456-78909</p>
+                </div>
+                <div class="comp-timing flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="comp-timing flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Saturday: 10:00 AM - 3:00 PM</p>
+                </div>
+                <div class="comp-timing flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Sunday: closed</p>
+                </div>
+                <div class="comp-wbAdd flex items-center gap-2 text-[#a6004b]">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>www.nescafeofficial.com</p>
+                </div>
+              </div>
+              <div id="contact-input-sec" class="w-full sm:w-1/2 h-auto">
+                <form
+                  id="form"
+                  action="#"
+                  target="_blank"
+                  class="w-full flex flex-col items-center gap-8"
+                >
+                  <div class="name w-full flex flex-col">
+                    <input type="text" placeholder="Your name" />
+                    <div class="error text-pink-800 text-sm"></div>
+                  </div>
+                  <div class="email w-full flex flex-col">
+                    <input type="text" placeholder="Your email" />
+                    <div class="error text-pink-800 text-sm"></div>
+                  </div>
+                  <div class="message w-full flex flex-col">
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Your message"
+                    ></textarea>
+                    <div class="error text-pink-800 text-sm"></div>
+                  </div>
+                  <button
+                    class="bg-[#a6004b] hover:bg-[#ffca56] active:bg-[#ffae00] px-12 py-4 rounded-md font-[500] text-[#ffae00] active:text-[#a6004b] hover:text-[#a6004b] transition-all duration-150"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer section  -->
+         <footer class="bg-[#111] w-full h-auto px-5 sm:px-12 py-7">
+          <div id="footertexts" class="text-coffee-gold flex w-full justify-between flex-col sm:flex-row items-start sm:items-center sm:text-sm text-xs gap-6">
+            <div class="copyright font-[300]">
+              <span> ©2025 Coffee Shop | Souvik$arkar </span>
+            </div>
+            <div class="policy">
+              <ul class=" flex sm:items-center items-start gap-4 sm:gap-7">
+                <li class="active:text-[#a6004b] hover:text-[#ffca56]">Privacy Policy</li>
+                <li class="active:text-[#a6004b] hover:text-[#ffca56]">Refund Policy</li>
+              </ul>
+            </div>
+          </div>
+         </footer>
+      </main>
+      <!-- main contents ends -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-10 md:hidden"
+      ></div>
+    </div>
+    <!-- all wrapper ends  -->
+    <!-- swiper script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- javascript  -->
+    <script src="script.js"></script>
+  </body>
+</html>
